@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loMapa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#69fe00"
+    android:orientation="horizontal">
+
+
+    <include
+        layout="@layout/activity_geo_game"
+
+        android:layout_width="411dp"
+        android:layout_height="427dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+        <Button
+            android:id="@+id/botonInicio"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_weight="0"
+            android:background="@drawable/botones_redondos"
+            android:text="ABRIR "
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textoGps"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:background="#69fe00"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+        <VideoView
+            android:id="@+id/videoCofre"
+            android:layout_width="match_parent"
+            android:layout_height="482dp"
+            android:layout_weight="0"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

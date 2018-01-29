@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:id="@+id/elay"
+    android:layout_height="683dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <VideoView
+        android:id="@+id/vidL"
+        android:layout_width="match_parent"
+        android:layout_height="467dp"
+        android:visibility="visible" />
+
+    <Button
+        android:background="@drawable/botones_redondos"
+        android:id="@+id/btnX"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="REINTENTAR" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fail" />
+
+</LinearLayout>
+

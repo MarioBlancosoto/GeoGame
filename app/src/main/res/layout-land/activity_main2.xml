@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mbs.geogame.Main2Activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/oldmap"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/marco_video"
+                android:fadingEdge="none|horizontal|vertical" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/botones_redondos"
+
+            android:fontFamily="casual"
+            android:freezesText="false"
+            android:hapticFeedbackEnabled="true"
+            android:lineSpacingExtra="8sp"
+            android:text="COMENZAR"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/botones_redondos"
+
+            android:fontFamily="casual"
+            android:lineSpacingExtra="8sp"
+            android:soundEffectsEnabled="?android:attr/windowOverscan"
+            android:text="INSTRUCCIONES"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/botones_redondos"
+            android:defaultFocusHighlightEnabled="true"
+
+            android:fontFamily="casual"
+            android:lineSpacingExtra="8sp"
+            android:text="SALIR"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:text="®Todos los derechos reservados,MBS 2018"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

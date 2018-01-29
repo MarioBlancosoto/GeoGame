@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mbs.geogame.Instrucciones">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textoinst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSTRUCCIONES"
+
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:text="OBJETIVO:
+Conseguir los 3 tesoros escondidos en las areas marcadas con los circulos verdes"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            app:srcCompat="@drawable/mapita" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:text="Cuando  entres en la zona,los mensajes en la consola y el color de la misma te irán indicando cuan cerca te encuentras de los tesoros.
+Una vez te encuentres a 10 metros podrás leer el QR con el botón Abrir para recoger cada uno de los tesoros."
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:srcCompat="@drawable/mapita2" />
+
+        <Button
+            android:id="@+id/btnv"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:text="VOLVER" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
